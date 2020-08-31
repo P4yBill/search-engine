@@ -1,0 +1,21 @@
+# Build
+build/
+build
+.gradle/
+/bin
+/bin.*
+
+# IDE
+.vscode
+.idea/
+/.project
+
+/eclipse-build
+/classes
+/idea-build
+dist
+lib
+/.classpath
+/.settings
+/.caches
+.DS_Store

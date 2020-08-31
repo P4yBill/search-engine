@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+//    id 'org.openjfx.javafxplugin' version '0.0.5'
+}
+
+group 'com.p4ybill.gui'
+
+dependencies {
+    implementation project(':engine:demo')
+    // TODO: Make changes in order to remove core from here.
+    implementation project(':engine:core')
+}
+
+run {
+    standardInput = System.in
+}
+
+//javafx {
+//    version = "12"
+//    modules = [ 'javafx.controls' ]
+//}
+
+mainClassName = 'com.p4ybill.gui.Main'

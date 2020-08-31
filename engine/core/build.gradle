@@ -1,0 +1,6 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':engine:store')
+    compile 'org.apache.opennlp:opennlp:1.6.0'
+}

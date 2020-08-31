@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="indexFilesButton" layoutX="45.0" layoutY="87.0" mnemonicParsing="false" text="Hello World" />
+        <Label fx:id="indexLabel" layoutX="45.0" layoutY="47.0" prefHeight="25.0" prefWidth="100.0" wrapText="true" />
+    </children>
+</AnchorPane>

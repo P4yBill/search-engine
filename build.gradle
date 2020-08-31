@@ -1,0 +1,12 @@
+version = "1.0.0-SNAPSHOT"
+
+allprojects {
+    version = rootProject.version
+    apply plugin: 'base'
+
+    group "com.p4ybill"
+
+    repositories {
+        mavenCentral()
+    }
+}

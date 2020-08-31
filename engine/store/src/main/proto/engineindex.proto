@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+// contains messages that are used for the indexer.
+
+option java_package = "com.p4ybill.engine.store";
+option java_outer_classname = "EngineIndexPB";
+
+message SoundexedItem{
+  string soundexedTerm = 1;
+  repeated int32 termOffsets = 2;
+}
+
+message Soundex{
+  repeated SoundexedItem soundexItems = 1;
+}
+
+message LexiconArrayItem {
+  int32 docFrequency = 1;
+  int32 postingOffset = 2;
+  int32 termOffset = 3; // optional
+}
+
+message LexiconArray{
+  repeated LexiconArrayItem lexiconItem = 1;
+}
+
+message PostingList{
+  message Posting{
+    int32 docId = 1;
+    double weight = 2;
+
+    repeated int32 termPositions = 3 [packed = true];
+  }
+
+  repeated Posting postings = 1;
+}

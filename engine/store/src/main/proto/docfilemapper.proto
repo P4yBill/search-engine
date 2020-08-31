@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+//package proto;
+
+option java_package = "com.p4ybill.engine.store";
+option java_outer_classname = "DocFileMapperPB";
+
+message DocFileMapper {
+  message Doc{
+    int32 docId = 1;
+    string fileName = 2;
+  }
+  repeated Doc docs = 1;
+}
